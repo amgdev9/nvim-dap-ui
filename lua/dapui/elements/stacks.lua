@@ -29,7 +29,7 @@ return function(client)
   end
 
   ---@nodoc
-  dapui.elements.stacks.buffer = util.create_buffer("DAP Stacks <leader>dt", {
+  dapui.elements.stacks.buffer = util.create_buffer("DAP Stacks", {
     filetype = "dapui_stacks",
   })
 
