@@ -270,6 +270,10 @@ local function _get_session_frame(client)
     return nil
   end
 
+  if client.session.current_frame == nil then
+    return nil
+  end
+  
   local memory_reference = client.session.current_frame["instructionPointerReference"]
 
   if memory_reference ~= nil then
